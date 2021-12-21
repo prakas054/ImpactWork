@@ -1,0 +1,22 @@
+<h3>Data Binding in Angular</h3>
+
+<fieldset>
+    <legend>User Login</legend>
+     User Id  :   <input  type="text"  [(ngModel)]="uid"   />
+     <br/><br/>
+     Password  :   <input  type="password"  [(ngModel)]="pwd"   />
+     <br/><br/>
+     <button [disabled]="isButtonDisabled" (click)="loginButton_click()">Login</button>
+     <p> {{result}} </p>
+</fieldset>
+
+<br/><br/>
+Product : <input type="text" [(ngModel)]="product"  />
+<br/><br/>
+Unit Price : <input type="text" [(ngModel)] = "unitPrice"  />
+<br/><br/>
+Quantity : <input type="number" [(ngModel)] = "quantity" />
+<br/><br/>
+<button (click) = "GetTotalButton_click()">Get Total</button>
+<p>Total Amount : {{totalAmount}} </p>
+
